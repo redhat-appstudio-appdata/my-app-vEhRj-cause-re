@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-py2z
+  namespace: tadamski-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:9303a7ebb56dbbf8dd1a402989b1e7b5c42e56ec517ed9405b9c2c7749469306
+        name: my-java-quarkus
+        resources: {}
+status: {}
